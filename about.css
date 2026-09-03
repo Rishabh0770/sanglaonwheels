@@ -1,0 +1,13 @@
+/* =========================================================
+   ABOUT PAGE — page-specific additions
+   ========================================================= */
+.duo-cards{ display:grid; gap:24px; grid-template-columns:1fr; }
+@media (min-width:768px){ .duo-cards{ grid-template-columns:1fr 1fr; } }
+.duo-card{ position:relative; background:var(--bg-panel); border:1px solid var(--line-dark); padding:38px 32px; overflow:hidden; }
+.duo-card__num{
+  position:absolute; top:14px; right:22px; font-family:var(--serif); font-size:5.2rem;
+  color:rgba(243,237,228,0.05); line-height:1; pointer-events:none;
+}
+.duo-card h3{ position:relative; font-size:1.3rem; margin-bottom:14px; }
+.duo-card p{ position:relative; font-size:.94rem; color:var(--ink-dim); line-height:1.7; }
+.duo-card strong{ color:var(--gold-soft); font-weight:600; }
